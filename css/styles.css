@@ -33,7 +33,7 @@ body {
 
 .container{
   width:100%;
-  max-width: 1200px;
+  max-width: 1158px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -54,13 +54,14 @@ body {
 }
 /* --------------------HEADER ---------------------*/
 .header {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  
+  border-bottom: 1px solid var(--gray-color);
+
 }
 
 .header-container{
   display: flex;
-  border-bottom: 1px solid var(--gray-color);
+  
   
 }
 
@@ -84,7 +85,11 @@ body {
   margin-right: auto;
 }
 .header-nav-logo {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   margin-right: 76px;
+  
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   font-weight: 800;
@@ -102,9 +107,13 @@ body {
   gap: 40px;
 }
 .header-item {
+
 }
 .header-link {
-  padding: 14px 0;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -128,6 +137,10 @@ body {
 .header-address-item {
 }
 .header-address-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -146,18 +159,25 @@ body {
 }
 .main-section {
   background-color: var(--main-color-title);
+  
+  padding-top: 188px;
   padding-bottom: 188px;
 }
 .main-title {
-  padding-top: 188px;
-  margin-bottom: 48px;
 
+  margin-right: auto;
+  margin-left: auto;
+  width: 496px;
+  margin-bottom: 48px;
+  
+  font-weight: 700;
   text-align: center;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
   color: var(--bg-white-color);
   
+
 }
 
 
@@ -208,7 +228,7 @@ body {
 .technologies-list {
   display: flex;
   gap: 24px;
-  justify-content: space-between;
+  
 }
 .technologies-items {
   width: calc((100% - 72px) / 4)
@@ -230,7 +250,7 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--main-color-title);
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .doing-list {
   display: flex;
@@ -254,7 +274,8 @@ body {
 
 .team-section {
   background-color: var(--ashen-color);
-  padding-bottom: 32px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-subtitle {
   text-align: center;
@@ -262,19 +283,19 @@ body {
   line-height: 1.11;
   letter-spacing: 0.02em;
   color: var(--main-color-title);
-  padding-top: 120px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
+  
 }
 
 
 .team-list {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 120px;
-
+  
 }
+
 .team-items {
-  border-bottom: 1px solid var(--gray-color);
+  border-radius: 0px 0px 4px 4px;
   width: calc((100% - 72px) / 4)
 }
 .items {
@@ -288,9 +309,10 @@ body {
 
 .text-block{
   text-align: center;
-  padding: 32px 67px 64px 67px;
+  padding: 32px 16px ;
 }
 .team-headline {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -300,7 +322,7 @@ body {
 
 }
 .team-text{
-  padding-bottom: 32px;
+  
 }
 
 /* --------------FOOTER-------------- */
@@ -308,6 +330,7 @@ body {
 
 .footer {
   padding-top: 100px;
+  padding-bottom: 100px;
   
   background-color: var(--main-color-title)
   
@@ -338,8 +361,8 @@ body {
 .footer-text {
   max-width: 264px;
   color: var(--gray-color);
-  padding-top: 16px;
-  padding-bottom: 100px;
+  margin-top: 16px;
+  
 }
 
 /* ---------------------------PORTFOLIO--------------------------- */
@@ -348,15 +371,17 @@ body {
   background-color: var(--bg-white-color);
 }
 .main-section-services {
+  padding-top: 120px;
   padding-bottom: 120px;
+
 }
 
 .button-list {
   justify-content: center;
   display: flex;
-  margin-top: 120px;
   margin-bottom: 72px;
   gap: 24px;
+  
 }
 
 .btn-items {
@@ -382,6 +407,7 @@ body {
 .button-items:is(:hover, :focus) {
   background-color: var(--logo-color-braun);
   color: var(--bg-white-color);
+  border-color: transparent;
 }
 
 .types-section {
@@ -389,11 +415,14 @@ body {
 .types-list {
   display: flex;
   flex-wrap:  wrap;
-  justify-content: space-between;
+  gap: 24px;
+  
+  
   
 }
 .types-items {
-  border: 1px solid var(--gray-color);
+  
+  
   width: calc((100% - 48px) / 3)
   
 }
@@ -407,11 +436,17 @@ body {
   height: auto;
 }
 .types-text-block{
-  padding: 32px 16px;
+  border-right: 1px solid #E7E9FC;
+  border-left: 1px solid #E7E9FC;
+  border-bottom: 1px solid #E7E9FC;
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-bottom: 64px;
+
 
 }
 .types-subtitle {
-  padding-bottom: 8px;
+  margin-bottom: 8px;
   
 }
 .types-text {
